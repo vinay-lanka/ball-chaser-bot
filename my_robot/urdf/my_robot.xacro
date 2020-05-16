@@ -36,18 +36,32 @@
             <box size=".4 .24 .1"/>
         </geometry>
         </visual>
+        
+        <collision name='back_caster_collision'>
+        <origin xyz="-0.15 0 -0.05" rpy=" 0 0 0"/>
+        <geometry>
+            <sphere radius="0.0299"/>
+        </geometry>
+        </collision>
+
+        <visual name='back_caster_visual'>
+        <origin xyz="-0.15 0 -0.05" rpy=" 0 0 0"/>
+        <geometry>
+            <sphere radius="0.0300"/>
+        </geometry>
+        </visual>
 
         <collision name='front_caster_collision'>
         <origin xyz="0.15 0 -0.05" rpy=" 0 0 0"/>
         <geometry>
-            <sphere radius="0.0324"/>
+            <sphere radius="0.0299"/>
         </geometry>
         </collision>
 
         <visual name='front_caster_visual'>
         <origin xyz="0.15 0 -0.05" rpy=" 0 0 0"/>
         <geometry>
-            <sphere radius="0.0325"/>
+            <sphere radius="0.0300"/>
         </geometry>
         </visual>
 
